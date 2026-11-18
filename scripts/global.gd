@@ -3,10 +3,10 @@ extends Node
 var checkpoint = 0
 var chance_to_spotknutcya = 0.2
 var spotknytcya_on = 10
-var JUMP_VELOCITY = -250.0
+var JUMP_VELOCITY: float = -250.0
 var SPEED = 100.0
 
-const SAVE_PATH = "user://save_game.cfg"
+const SAVE_PATH: String = "user://save_game.cfg"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
