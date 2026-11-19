@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 
 func _on_checkpoint_1_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
-		if global.checkpoint <= 1:
+		if global.checkpoint < 1:
 			global.checkpoint = 1
 			global.save_data()
 			global.JUMP_VELOCITY -= 50
