@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://do3n8ottot0l5"]
+
+[ext_resource type="Script" uid="uid://be1ymm30wtcrd" path="res://scripts/timer.gd" id="1_5lxq6"]
+[ext_resource type="FontFile" uid="uid://c55a5uh5dinx5" path="res://assets/Tiny5-Regular.ttf" id="2_g5y8c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bio7f"]
+bg_color = Color(0, 0, 0, 0.46666667)
+
+[node name="Timer" type="CanvasLayer" unique_id=471242773]
+script = ExtResource("1_5lxq6")
+
+[node name="Label" type="Label" parent="." unique_id=2112161291]
+offset_left = 6.0
+offset_top = 7.0
+offset_right = 94.0
+offset_bottom = 43.0
+theme_override_fonts/font = ExtResource("2_g5y8c")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_bio7f")
+text = "bla bla"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="." unique_id=2062783619]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

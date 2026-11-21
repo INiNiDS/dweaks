@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b2q6bkn2qekw" path="res://assets/Mask Dude/Fall (32x32).png" id="2_qlg0r"]
 [ext_resource type="Texture2D" uid="uid://87imkw5ak0co" path="res://assets/Mask Dude/Run (32x32).png" id="3_dqkch"]
 [ext_resource type="Texture2D" uid="uid://eqp74ks5kjwe" path="res://assets/Menu_weak.png" id="6_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://d3bi1stccmxt2" path="res://assets/pizza.png" id="7_fjrip"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
 radius = 11.0
@@ -233,3 +234,9 @@ offset_top = -49.0
 offset_right = 22.0
 offset_bottom = -19.0
 texture = ExtResource("6_tuyoq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=684081703]
+visible = false
+position = Vector2(-16, 4)
+scale = Vector2(0.60937536, 0.59375)
+texture = ExtResource("7_fjrip")

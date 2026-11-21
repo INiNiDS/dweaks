@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @onready var anim = $AnimatedSprite2D
+@onready var pizza = $Sprite2D
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -17,8 +18,12 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, global.SPEED)
 
 	if direction < 0:
+		if anim.flip_h == false:
+			pizza.position.x += 30
 		anim.flip_h = true
 	elif direction > 0:
+		if anim.flip_h == true:
+			pizza.position.x -= 30
 		anim.flip_h = false
 
 	if not is_on_floor():
