@@ -1,12 +1,18 @@
 extends Node2D
 
 @onready var player = $Player
+@onready var player_pizza = $Player/Sprite2D
+@onready var start_pizza = $Order/Start/Sprite2D
+@onready var end_pizza = $Order/End/Sprite2D
 const CHECKPOINT_1 = Vector2(200 * 16, -12 * 16)
 const CHECKPOINT_2 = Vector2(118 * 16, -106 * 16)
 const CHECKPOINT_3 = Vector2(251 * 16, -146 * 16)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	player_pizza.hide()
+	end_pizza.hide()
+	start_pizza.show()
 	if global.checkpoint == 1:
 		player.global_position = CHECKPOINT_1
 	elif global.checkpoint == 2:

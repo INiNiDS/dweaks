@@ -1047,7 +1047,7 @@ texture = ExtResource("10_kvuet")
 position = Vector2(47, 50)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Order/End" unique_id=1071133182]
-position = Vector2(3854.5, -2325)
+position = Vector2(3809, -2375)
 shape = SubResource("RectangleShape2D_lhe6d")
 
 [node name="Sprite2D" type="Sprite2D" parent="Order/End" unique_id=675691172]
