@@ -51,11 +51,14 @@ func load_data() -> void:
 		best = config.get_value("GameData", "best", 0)
 
 func reset() -> void:
-	checkpoint = 0
-	chance_to_spotknutcya = 0.2
-	spotknytcya_on = 10
-	JUMP_VELOCITY = -250.0
-	SPEED = 100.0
-	seconds = 0
+	var config = ConfigFile.new()
+	config.load(SAVE_PATH)
 	
-	save_data()
+	config.set_value("GameData", "checkpoint", 0)
+	config.set_value("GameData", "chance_to_spotknutcya", 0.2)
+	config.set_value("GameData", "spotknytcya_on", 10)
+	config.set_value("GameData", "JUMP_VELOCITY", -250.0)
+	config.set_value("GameData", "SPEED", 100.0)
+	config.set_value("GameData", "seconds", 0)
+	
+	config.save(SAVE_PATH)
