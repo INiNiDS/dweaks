@@ -1,5 +1,7 @@
 # Idea
 
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/4aafa55f-a16a-4a81-9cc0-3761da049503" />
+
 Ok you, yep you are Weak (not harassment!), and you want to be better. So what you want to do to be better? You want to do your best to be better. You want climb to the PEAK.
 
 ## Mechanics 
@@ -17,6 +19,10 @@ Your goal is to deliver order. From Tyler to... Tyler (i didn't had enough time 
 ## Control
 
 It's very simple, just like A, D (or arrows) to run, Space to jump and E to interact (also you can get hint to interact if your mouse enter Tyler)
+
+# Why i am made that
+
+Ok, just because i really long time want to create a platformer, that would be just easy platformer. And week-5 theme is good reason to do that right now!
 
 # Installation
 
