@@ -141,7 +141,7 @@ text = "Press E to interact"
 
 [node name="Label2" type="Label" parent="." unique_id=439119748]
 visible = false
-custom_minimum_size = Vector2(200, 0)
+custom_minimum_size = Vector2(170, 0)
 offset_left = 22.0
 offset_top = -29.0
 offset_right = 222.0
